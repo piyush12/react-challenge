@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { ActionKind, useCart } from "../Context/cartContext";
 import Button from "./Button";
 import EmptyCart from "./EmptyCart";
@@ -8,7 +8,7 @@ import Plate from "./Plate";
 import ProductContent from "./ProductContent";
 import ProductPrice from "./ProductPrice";
 
-function CartItems() {
+function CartItems(): ReactElement {
   const { itemsInCart, dispatch } = useCart();
 
   const addQuantity = (item: Cart) => {

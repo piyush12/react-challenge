@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { useCart } from "../Context/cartContext";
 import Button from "./Button";
 import { FoodItems } from "./interface";
@@ -6,7 +6,11 @@ import Item from "./Item";
 import Plate from "./Plate";
 import ProductContent from "./ProductContent";
 
-function ShoppingItems({ products }: { products: Array<FoodItems> }) {
+function ShoppingItems({
+  products,
+}: {
+  products: Array<FoodItems>;
+}): ReactElement {
   const { addToCart, itemsInCart } = useCart();
 
   return (

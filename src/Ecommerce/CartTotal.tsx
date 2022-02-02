@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { useCart } from "../Context/cartContext";
 import TotalLineItem from "./TotalLineItem";
 
-function CartTotal() {
+function CartTotal(): ReactElement {
   const { itemsInCart } = useCart();
   const subTotal = itemsInCart.reduce(
     (acc, item) => item.quantity * +item.price + acc,

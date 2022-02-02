@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 
 function TotalLineItem({
   label,
@@ -8,7 +8,7 @@ function TotalLineItem({
   label: string;
   price: string | number;
   className: string;
-}) {
+}): ReactElement {
   return (
     <div className='line-item'>
       <div className='label'>{label}:</div>
