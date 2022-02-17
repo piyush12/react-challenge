@@ -1,14 +1,15 @@
 // import Cart from "./Ecommerce";
 // import PomodoroApp from "./Pomodoro";
 // import TipCalculator from "./TipCalculator";
+// import WeatherApp from "./WeatherApp";
 import { ReactElement } from "react";
+import Slider from "./Slider";
 import "./styles.css";
-import WeatherApp from "./WeatherApp";
 
 export default function App(): ReactElement {
   return (
     <div className='App'>
-      <WeatherApp />
+      <Slider />
     </div>
   );
 }
