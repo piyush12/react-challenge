@@ -3,14 +3,15 @@
 // import TipCalculator from "./TipCalculator";
 // import WeatherApp from "./WeatherApp";
 // import Slider from "./Slider";
+// import OtpValidator from "./OtpValidator";
 import { ReactElement } from "react";
-import OtpValidator from "./OtpValidator";
 import "./styles.css";
+import DatePicker from "./DatePicker";
 
 export default function App(): ReactElement {
   return (
     <div className='App'>
-      <OtpValidator />
+      <DatePicker />
     </div>
   );
 }
